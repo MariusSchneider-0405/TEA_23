@@ -46,12 +46,14 @@ int main(int argc, char **argv) {
 
     /*----Teil 4----*/
     foo();
-    fmt::print("Adresse von foo: {}\\n", fmt::ptr(&foo));
+    fmt::print("Adresse von foo: {}\n", fmt::ptr(&foo));
 
     return 0; /* exit gracefully*/
 }
 /*
-Fazit: Speichersegmente in C++
+------------------------------------------------------------------------------
+%% ----------------- Fazit: Speichersegmente in C++ ------------------------%%
+------------------------------------------------------------------------------
 
 In C++ werden Daten je nach Art in verschiedene Speicherbereiche gelegt:
 
@@ -67,9 +69,12 @@ In C++ werden Daten je nach Art in verschiedene Speicherbereiche gelegt:
 
     - Funktionen liegen im Code-Segment, wo der ausführbare Programmcode gespeichert ist.
 
-Wichtig:
+-------------
+Wichtig: !!!
+-------------
 Stack und Heap unterscheiden sich in Lebensdauer und Verwaltung.
 Zeiger sind notwendig, um auf Speicher im Heap zuzugreifen und machen sichtbar, wo Daten tatsächlich liegen.
+--------------------------------------------------------------------------------------------------------------------
 
 Skizze Arbeitsspeicher: 
 
@@ -87,6 +92,5 @@ Skizze Arbeitsspeicher:
 | Stack                  |  → lokale Variablen, Funktionsaufrufe
 |         ↓ wächst nach unten
 +------------------------+
-
 
 */
