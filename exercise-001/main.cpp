@@ -18,7 +18,7 @@ int main(int argc, char **argv) {
      * it is much more convenient than std::cout and printf
      * More info at https://fmt.dev/latest/api.html
      */
-    int xyz = 1234; 
+    const int localVar = 2; 
 
     fmt::print("Hello, {}!\n", tea::PROJECT_NAME);
     fmt::print("Wert: {}, \nAdresse: {}", globalVar, fmt::ptr(&globalVar) );
@@ -27,7 +27,7 @@ int main(int argc, char **argv) {
     fmt::print("\nWert: {}, Adresse: {}", bbb, fmt::ptr(&bbb));
     fmt::print("\nWert: {}, Adresse: {}", ccc, fmt::ptr(&ccc));
     fmt::print("\nWert: {}, Adresse: {}", ddd, fmt::ptr(&ddd));
-    fmt::print("\nWert: {}, Adresse: {}", xyz, fmt::ptr(&xyz));
+    fmt::print("\nWert: {}, Adresse: {}", localVar, fmt::ptr(&localVar));
     /* INSERT YOUR CODE HERE */
 
     return 0; /* exit gracefully*/
