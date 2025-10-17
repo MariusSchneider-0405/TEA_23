@@ -50,5 +50,5 @@ void changeValueByParameter(int value) {
 void changeValueByPointer(int* ptr) {
     *ptr = 4711;
     fmt::println("Der wert von *ptr in der Funktion (changeValueByPointer): {}", *ptr);
-    fmt::println("Die Adresse von ptr in der Funtkion (changeValueByPointer): {}", fmt::ptr(ptr));
+    fmt::println("Die Adresse von ptr in der Funktion (changeValueByPointer): {}", fmt::ptr(ptr));
     }
