@@ -3,6 +3,10 @@
 
 #include "config.h"
 
+int globalVar = 1;
+int Geburtstag = 4052004;
+int Alter = 21; 
+
 int main(int argc, char **argv) {
 
     /**
@@ -11,7 +15,8 @@ int main(int argc, char **argv) {
      * More info at https://fmt.dev/latest/api.html
      */
     fmt::print("Hello, {}!\n", tea::PROJECT_NAME);
-
+    fmt::print("Wert: {}, \nAdresse: {}", globalVar, fmt::ptr(&globalVar) );
+    fmt::print("\nGeburtstag: {}, \nAlter: {}, \nAdresse Geburtstag: {}, \nAdresse Alter: {}", Geburtstag, Alter, fmt::ptr(&Geburtstag), fmt::ptr(&Alter));
     /* INSERT YOUR CODE HERE */
 
     return 0; /* exit gracefully*/
