@@ -81,3 +81,15 @@ auto main(int argc, char** argv) -> int
 
     return 0; /* exit gracefully*/
 }
+
+
+/*Aufgabe 1*/
+/* 1. Es entsteht ein (zombie-)Pointer
+2. Undefined behaviour 
+3. Stack Overflow
+4. Memory Leak */
+
+/* Welche Fehler sind in echten Mikrocontrollersystemen besonders Kritisch?
+Memory Leaks und Stack Overflows, da meist kein Betriebssystem und nur begrenzter Speicher vorhanden ist 
+--> Fehler können zu Systemabstürzen der seltsamen Verhalten*/
+
